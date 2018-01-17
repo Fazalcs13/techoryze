@@ -158,10 +158,15 @@ INSTALLED_APPS = (
 
 CHATTERBOT = {
     'name': 'Django ChatterBot Example',
-    'trainer': 'chatterbot.trainers.ListTrainer',
+    'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
+    'training_data': [
+        #'chatterbot.corpus.english.greetings',
+        #'chatterbot.corpus.english.conversations',
+        'chatterbot.corpus.english.JohnPowers'
+    ],
     'logic_adapters':[
         {
-            "import_path": "chatterbot.logic.BestMatch"
+            "import_path": "chatterbot.logic.BestMatch",
         },
         {
             'import_path': 'chatterbot.logic.LowConfidenceAdapter',
@@ -170,13 +175,7 @@ CHATTERBOT = {
         }
     ],
     'django_app_name': 'django_chatterbot',
-    'read_only': True,
-    'training_data': [
-        #'chatterbot.corpus.english.greetings',
-        #'chatterbot.corpus.english.conversations',
-        'chatterbot.corpus.english.JohnPowers'
-
-    ],
+    'read_only': True
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
