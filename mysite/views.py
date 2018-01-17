@@ -34,12 +34,6 @@ def coursesTopic_view(request):
             return render(request, template, context)
 
 
-    s3 = boto.connect_s3('<your access key>', '<your secret key>')
-    bucket = s3.get_bucket('<your bucket>')  # does this work?
-    s3 = boto.connect_s3()
-    s3.aws_access_key_id
-
-
     template = 'index.html'
     coursesTopic = CoursesTopic.objects.all()
     context = {'coursesTopic': coursesTopic}
