@@ -151,8 +151,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'chatterbot.ext.django_chatterbot',
-    'mysite',
-    'storages'
+    'mysite'
 )
 
 
@@ -162,9 +161,7 @@ CHATTERBOT = {
     'trainer': 'chatterbot.trainers.ListTrainer',
     'logic_adapters':[
         {
-            "import_path": "chatterbot.logic.BestMatch",
-            "statement_comparison_function": "chatterbot.comparisons.jaccard_similarity",
-            "response_selection_method": "chatterbot.response_selection.get_first_response"
+            "import_path": "chatterbot.logic.BestMatch"
         },
         {
             'import_path': 'chatterbot.logic.LowConfidenceAdapter',
@@ -177,9 +174,8 @@ CHATTERBOT = {
     'training_data': [
         #'chatterbot.corpus.english.greetings',
         #'chatterbot.corpus.english.conversations',
-        #'chatterbot.corpus.english.JohnPowers'
-        "Music",
-        "Hey I see you need help with Music please click on the following link Etc",
+        'chatterbot.corpus.english.JohnPowers'
+
     ],
 }
 
