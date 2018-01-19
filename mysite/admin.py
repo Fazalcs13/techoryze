@@ -8,4 +8,3 @@ class CourseAdmin(admin.ModelAdmin):
 
 admin.site.register(Courses, CourseAdmin)
 admin.site.register(CoursesTopic)
-admin.site.register(About)
