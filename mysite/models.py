@@ -97,3 +97,8 @@ class CoursesTopic(models.Model):
 
 class About(models.Model):
     About_video = models.FileField(upload_to=u'video/', default='', blank=True)
+    About_video_WebmFormat = models.FileField(upload_to=u'video/', default='', blank=True)
+    About_video_OggFormat = models.FileField(upload_to=u'video/', default='', blank=True)
+
+    def __str__(self):
+        return self.About_video
