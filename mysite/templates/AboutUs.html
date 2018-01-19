@@ -80,7 +80,16 @@
 <h4 class="font-familyRaleway colorgray mt-5" >Who uses Techoryze.com?</h4>
 <h6 class="font-familyRaleway colorgray mt-3" >In addition to helping individual learners achieve personal and professional goals, we offer flexible, cost-effective group memberships for your business, school, or government organization. Below is a sample of some of the organizations that use Techoryze.com.</h6>
 
+<div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0">
+        {% for abouts in about %}
 
+            <video controls class="col p-0"  poster="https://techoryze.herokuapp.com/static/images/bg/poster.png" preload="auto">
+            <source src="https://techoryze.herokuapp.com/media/ {{ abouts.About_video }}" type="video/mp4">
+            </video>
+
+        {% endfor %}
+
+        </div>
 
 
 </div>

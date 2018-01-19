@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response, render
 from django.template.loader import render_to_string
 
-from .models import CreateUser, Courses, CoursesTopic
+from .models import CreateUser, Courses, CoursesTopic, About
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib import auth, messages
@@ -239,7 +239,9 @@ def view_confirm(request):
 
 def view_about_us(request):
         template = "AboutUs.html"
-        return render(request,template)
+        about = About.objects.all()
+        context = {'about': about}
+        return render(request, template, context)
        # return HttpResponseRedirect("/AboutUs")
 
 def view_forgot_message(request):

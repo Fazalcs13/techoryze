@@ -94,3 +94,6 @@ class CoursesTopic(models.Model):
 
     def __str__(self):
         return self.course_detail
+
+class About(models.Model):
+    About_video = models.FileField(upload_to=u'video/', default='', blank=True)

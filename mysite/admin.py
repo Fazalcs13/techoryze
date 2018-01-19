@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CreateUser, Courses, CoursesTopic
+from .models import CreateUser, Courses, CoursesTopic, About
 
 class CourseAdmin(admin.ModelAdmin):
     list_display = ('course_title', 'course_author_name', 'course_duration', 'course_date', 'course_category')
@@ -8,3 +8,4 @@ class CourseAdmin(admin.ModelAdmin):
 
 admin.site.register(Courses, CourseAdmin)
 admin.site.register(CoursesTopic)
+admin.site.register(About)
