@@ -1,11 +1,9 @@
 categories:
 - JohnPowers
 conversations:
-- - Excel
-  - Hey I see you need help with Microsoft Excel please click on the following link Etc
-- - Math
-  - Hey I see you need help with Math please click on the following link Etc
-- - Graphic
-  - Hey I see you need help with Graphic please click on the following link Etc
-- - Music
-  - Hey I see you need help with Music please click on the following link Etc
+- - I need help with Java
+  - Great.  We have a lot of resources on Java
+- - I need help with Photoshop
+  - OK.  Have you worked on it before?
+- - I need help with Tinkercad
+  - Sorry.  We don't have any data on this topic right now

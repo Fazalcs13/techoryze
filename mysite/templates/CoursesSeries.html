@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>.::Techoryze | Courses Videos::.</title>
-<link rel="icon" href="https://techoryze.herokuapp.com/static/images/logo/favicon.png" type="images/logo/favicon.png" />
-<link href="https://techoryze.herokuapp.com/static/css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="http://34.205.32.241/static/images/logo/favicon.png" type="images/logo/favicon.png" />
+<link href="http://34.205.32.241/static/css/style.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
-    <link rel="stylesheet" href="https://techoryze.herokuapp.com/static/css/chatstyle.css">
-<script src="https://techoryze.herokuapp.com/static/js/jquery.js"></script>
-<script src="https://techoryze.herokuapp.com/static/js/webjs.js"></script>
-    <script src="https://techoryze.herokuapp.com/static/js/js.cookie.js"></script>
+    <link rel="stylesheet" href="http://34.205.32.241/static/css/chatstyle.css">
+<script src="http://34.205.32.241/static/js/jquery.js"></script>
+<script src="http://34.205.32.241/static/js/webjs.js"></script>
+    <script src="http://34.205.32.241/static/js/js.cookie.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 </head>
@@ -26,7 +26,7 @@
 <!--START NAVBAR-->
 <nav class="col navbar navbar-expand-lg navbar-light d-block font-size14px p-0">
   <div class="col-lg-2 col-md-3 col-sm-4 col-7 p-0 pull-left mt-1">
-<a href="\" class="d-block"><img src="https://techoryze.herokuapp.com/static/images/logo/logo.png" width="130" class=""></a>
+<a href="\" class="d-block"><img src="http://34.205.32.241/static/images/logo/logo.png" width="130" class=""></a>
 </div>
 <div class="col-lg-10 col-md-12 col-sm-12 col-12 p-0 pull-left">
   <button class="navbar-toggler btn btn-dark pull-right margin-topNeg31px collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,32 +68,32 @@
         {% if forloop.first %}
             {% if course.course_category == 'MOS' %}
               {% define  '\Microsoft_Office_Suite'|addstr:"/courses" as url %}
-            <p class="font-size12px mt-4 m-0 pl-3"> <a href="{{ url }}">Microsoft Office Suite > </a><a href="https://techoryze.herokuapp.com/Microsoft_Office_Suite/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
+            <p class="font-size12px mt-4 m-0 pl-3"> <a href="{{ url }}">Microsoft Office Suite > </a><a href="http://34.205.32.241/Microsoft_Office_Suite/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
         {% endif %}
 
         {% if course.course_category == 'GD' %}
             {% define  '\Graphic_Design'|addstr:"/courses" as url %}
-            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">Graphic Design > </a>  <a href="https://techoryze.herokuapp.com/Graphic_Design/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
+            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">Graphic Design > </a>  <a href="http://34.205.32.241/Graphic_Design/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
         {% endif %}
 
         {% if course.course_category == 'SM' %}
             {% define  '\Sound_Music'|addstr:"/courses" as url %}
-            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">Sound & Music > </a>  <a href="https://techoryze.herokuapp.com/Sound_Music/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
+            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">Sound & Music > </a>  <a href="http://34.205.32.241/Sound_Music/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
         {% endif %}
 
         {% if course.course_category == 'WD' %}
             {% define  '\Web_Site_Development'|addstr:"/courses" as url %}
-            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">WEB SITE DEVELOPMENT > </a>  <a href="https://techoryze.herokuapp.com/WEB_SITE_DEVELOPMENT/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
+            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">WEB SITE DEVELOPMENT > </a>  <a href="http://34.205.32.241/WEB_SITE_DEVELOPMENT/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
         {% endif %}
 
         {% if course.course_category == 'AP' %}
             {% define  '\Animation_Production'|addstr:"/courses" as url %}
-            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">Animation Production > </a>  <a href="https://techoryze.herokuapp.com/Animation_Production/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
+            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">Animation Production > </a>  <a href="http://34.205.32.241/Animation_Production/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
         {% endif %}
 
         {% if course.course_category == 'VE' %}
             {% define  '\Video_Editing'|addstr:"/courses" as url %}
-            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">Video Editing > </a>  <a href="https://techoryze.herokuapp.com/Video Editing/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
+            <p class="font-size12px mt-4 m-0 pl-3"><a href="{{ url }}">Video Editing > </a>  <a href="http://34.205.32.241/Video Editing/{{ course.id }}/video/" class="font-size12px">{{ course.course_title }} </a>  <span class=""> > Lessons</span></p>
         {% endif %}
 
              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -115,8 +115,8 @@
 {% define course.course_video as video %}
 <div class="col-lg-8 col-md-8 col-sm-8 col-8 p-0" style="float: left;">
 
-        <video id="video" class="col p-0" controls="" poster="https://techoryze.herokuapp.com/static/images/bg/poster.png" preload="auto">
-            <source src="https://techoryze.herokuapp.com/media/{{ video }}" type="video/mp4">
+        <video id="video" class="col p-0" controls="" poster="http://34.205.32.241/static/images/bg/poster.png" preload="auto">
+            <source src="http://34.205.32.241/media/{{ video }}" type="video/mp4">
         </video>
 
         </div>
@@ -162,7 +162,7 @@ $('#vid1').click(function(){
         {% define course.course_video_1 as video %}
         //alert("{{ video }}");
         var video = document.getElementById('video');
-        video.src = 'https://techoryze.herokuapp.com/media/{{ video }}'
+        video.src = 'http://34.205.32.241/media/{{ video }}'
         video.play();
     {% endif %}
 });
@@ -174,7 +174,7 @@ $('#vid2').click(function(){
         {% define course.course_video_2 as video %}
         //alert("{{ video }}");
         var video = document.getElementById('video');
-        video.src = 'https://techoryze.herokuapp.com/media/{{ video }}'
+        video.src = 'http://34.205.32.241/media/{{ video }}'
         video.play();
     {% endif %}
 });
@@ -186,7 +186,7 @@ $('#vid3').click(function(){
         {% define course.course_video_3 as video %}
         //alert("{{ video }}");
         var video = document.getElementById('video');
-        video.src = 'https://techoryze.herokuapp.com/media/{{ video }}'
+        video.src = 'http://34.205.32.241/media/{{ video }}'
         video.play();
     {% endif %}
 });
@@ -198,7 +198,7 @@ $('#vid4').click(function(){
         {% define course.course_video_4 as video %}
         //alert("{{ video }}");
         var video = document.getElementById('video');
-        video.src = 'https://techoryze.herokuapp.com/media/{{ video }}'
+        video.src = 'http://34.205.32.241/media/{{ video }}'
         video.play();
     {% endif %}
 });
@@ -210,7 +210,7 @@ $('#vid5').click(function(){
         {% define course.course_video_5 as video %}
         //alert("{{ video }}");
         var video = document.getElementById('video');
-        video.src = 'https://techoryze.herokuapp.com/media/{{ video }}'
+        video.src = 'http://34.205.32.241/media/{{ video }}'
         video.play();
     {% endif %}
 });
@@ -231,7 +231,7 @@ $('#vid5').click(function(){
 <div class="container">
 <div class="col border-top1px mt-3">
 <div class="col-lg-3 col-md-6 col-sm-12 col-12 pl-0 pull-left mt-4">
-<a href="index.html"><img src="https://techoryze.herokuapp.com/static/images/logo/logo.png" width="135" class=""></a>
+<a href="index.html"><img src="http://34.205.32.241/static/images/logo/logo.png" width="135" class=""></a>
 <p class="pt-2">Lorem Ipsum is simply dummy text of the
 printing and typesetting industry. Lorem
 Ipsum has been the industry's standard
@@ -337,11 +337,11 @@ dummy text.</p>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-<script src="https://techoryze.herokuapp.com/static/js/chatscript.js"></script>
-<script src="https://techoryze.herokuapp.com/static/js/slim.min.js"></script>
-<script src="https://techoryze.herokuapp.com/static/js/popper.min.js"></script>
-<script src="https://techoryze.herokuapp.com/static/js/bootstrap.js"></script>
-<script src="https://techoryze.herokuapp.com/static/js/js.cookie.js"></script>
+<script src="http://34.205.32.241/static/js/chatscript.js"></script>
+<script src="http://34.205.32.241/static/js/slim.min.js"></script>
+<script src="http://34.205.32.241/static/js/popper.min.js"></script>
+<script src="http://34.205.32.241/static/js/bootstrap.js"></script>
+<script src="http://34.205.32.241/static/js/js.cookie.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
 var counter = 0;
@@ -382,7 +382,7 @@ you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48
           if(who == "me"){
               //var $row = $('<li class="list-group-item"></li>');
               $row = $('<div class="chat-message clearfix">\
-                 <img src="https://techoryze.herokuapp.com/static/images/icon/user_icon.png" alt="" width="32" height="32">\
+                 <img src="http://34.205.32.241/static/images/icon/user_icon.png" alt="" width="32" height="32">\
                   <div class="chat-message-content clearfix">\
                   <h5>{{ user }}</h5>\
                   <p id="text1">'+text+'</p>\
@@ -392,7 +392,7 @@ you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48
           }
           else {
                $row = $('<div class="chat-message clearfix">\
-                  <img src="https://techoryze.herokuapp.com/static/images/icon/usermalecircle.png" alt="" width="32" height="32">\
+                  <img src="http://34.205.32.241/static/images/icon/usermalecircle.png" alt="" width="32" height="32">\
                   <div class="chat-message-content clearfix">\
                   <h5>John Powers</h5>\
                   <p id="text1">'+text+'</p>\

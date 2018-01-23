@@ -25,7 +25,7 @@ class Courses(models.Model):
     VIDEO = 'VE'
 
     course_thumbnil_Image = models.ImageField()
-    course_video = models.CharField(max_length=1000, default='')
+    course_video = models.FileField(upload_to=u'video/', default='' , blank=True)
     course_title = models.TextField()
     course_detail = models.TextField()
     course_author_image = models.ImageField()
@@ -94,8 +94,3 @@ class CoursesTopic(models.Model):
 
     def __str__(self):
         return self.course_detail
-
-class About(models.Model):
-    About_video = models.FileField(upload_to=u'video/', default='', blank=True)
-    About_video_WebmFormat = models.FileField(upload_to=u'video/', default='', blank=True)
-    About_video_OggFormat = models.FileField(upload_to=u'video/', default='', blank=True)

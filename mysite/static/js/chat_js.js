@@ -32,7 +32,7 @@ you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48
           if(who == "me"){
               //var $row = $('<li class="list-group-item"></li>');
               $row = $('<div class="chat-message clearfix">\
-                 <img src="https://techoryze.herokuapp.com/static/images/icon/user_icon.png" alt="" width="32" height="32">\
+                 <img src="http://34.205.32.241/static/images/icon/user_icon.png" alt="" width="32" height="32">\
                   <div class="chat-message-content clearfix">\
                   <h5>{{ username }}</h5>\
                   <p id="text1">'+text+'</p>\
@@ -42,7 +42,7 @@ you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48
           }
           else {
                $row = $('<div class="chat-message clearfix">\
-                  <img src="https://techoryze.herokuapp.com/static/images/icon/usermalecircle.png" alt="" width="32" height="32">\
+                  <img src="http://34.205.32.241/static/images/icon/usermalecircle.png" alt="" width="32" height="32">\
                   <div class="chat-message-content clearfix">\
                   <h5>John Powers</h5>\
                   <p id="text1">'+text+'</p>\

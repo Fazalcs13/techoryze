@@ -2,10 +2,10 @@
 /* CSS Document */
 
 
-@import url("https://techoryze.herokuapp.com/static/css/bootstrap.css");
-@import url("https://techoryze.herokuapp.com/static/css/animate.css");
-@import url("https://techoryze.herokuapp.com/static/fonts/fontStyle.css");
-@import url("https://techoryze.herokuapp.com/static/css/font-awesome.css");
+@import url("http://34.205.32.241/static/css/bootstrap.css");
+@import url("http://34.205.32.241/static/css/animate.css");
+@import url("http://34.205.32.241/static/fonts/fontStyle.css");
+@import url("http://34.205.32.241/static/css/font-awesome.css");
 
 
 
@@ -484,7 +484,7 @@ background: url(../images/icon/mini_icon_ye.png) no-repeat left top;
     /* left: 0; */
     right: 50px;
     bottom: 0;
-    background: url(https://techoryze.herokuapp.com/static/images/icon/chatbtn.png) no-repeat;
+    background: url(http://34.205.32.241/static/images/icon/chatbtn.png) no-repeat;
     width: 50px;
     height: 45px;
 	background-color: #FBB040;
