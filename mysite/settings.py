@@ -1,4 +1,5 @@
 import os
+
 gettext = lambda s: s
 DATA_DIR = os.path.dirname(os.path.dirname(__file__))
 """
@@ -18,7 +19,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -28,9 +28,7 @@ SECRET_KEY = ')ww-agu5ikw59_vj3aiuz_4dr59vozr_!%pubb_5o4))b2x-jm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['techoryze.herokuapp.com',
-                 u'127.0.0.1']
-
+ALLOWED_HOSTS = ['http://techoryze.com', u'127.0.0.1']
 
 # Application definition
 
@@ -40,10 +38,7 @@ ALLOWED_HOSTS = ['techoryze.herokuapp.com',
 
 ROOT_URLCONF = 'mysite.urls'
 
-
-
 WSGI_APPLICATION = 'mysite.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
@@ -62,7 +57,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
@@ -79,7 +73,7 @@ SITE_ID = 1
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'mysite', 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'mysite', 'templates'), ],
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -103,9 +97,6 @@ TEMPLATES = [
         },
     },
 ]
-
-
-
 
 MIDDLEWARE_CLASSES = (
     'cms.middleware.utils.ApphookReloadMiddleware',
@@ -154,17 +145,15 @@ INSTALLED_APPS = (
     'mysite'
 )
 
-
-
 CHATTERBOT = {
     'name': 'Django ChatterBot Example',
     'trainer': 'chatterbot.trainers.ChatterBotCorpusTrainer',
     'training_data': [
-        #'chatterbot.corpus.english.greetings',
-        #'chatterbot.corpus.english.conversations',
+        # 'chatterbot.corpus.english.greetings',
+        # 'chatterbot.corpus.english.conversations',
         'chatterbot.corpus.english.JohnPowers'
     ],
-    'logic_adapters':[
+    'logic_adapters': [
         {
             "import_path": "chatterbot.logic.BestMatch",
         },
@@ -233,7 +222,7 @@ DATABASES = {
 }
 
 MIGRATION_MODULES = {
-    
+
 }
 
 THUMBNAIL_PROCESSORS = (

@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>.::Techoryze | Courses::.</title>
     {% comment %}http://127.0.0.1:8000{% endcomment %}
-<link rel="icon" href="http://34.205.32.241/static/images/logo/favicon.png" type="images/logo/favicon.png" />
-<link href="http://34.205.32.241/static/css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="http://127.0.0.1:8000/static/images/logo/favicon.png" type="images/logo/favicon.png" />
+<link href="http://127.0.0.1:8000/static/css/style.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
-    <link rel="stylesheet" href="http://34.205.32.241/static/css/chatstyle.css">
-<script src="http://34.205.32.241/static/js/jquery.js"></script>
-<script src="http://34.205.32.241/static/js/webjs.js"></script>
-    <script src="http://34.205.32.241/static/js/js.cookie.js"></script>
+    <link rel="stylesheet" href="http://127.0.0.1:8000/static/css/chatstyle.css">
+<script src="http://127.0.0.1:8000/static/js/jquery.js"></script>
+<script src="http://127.0.0.1:8000/static/js/webjs.js"></script>
+    <script src="http://127.0.0.1:8000/static/js/js.cookie.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
@@ -26,7 +26,7 @@
 <!--START NAVBAR-->
 <nav class="col navbar navbar-expand-lg navbar-light d-block font-size14px p-0">
   <div class="col-lg-2 col-md-3 col-sm-4 col-7 p-0 pull-left mt-1">
-<a href="/" class="d-block"><img src="http://34.205.32.241/static/images/logo/logo.png" width="130" class=""></a>
+<a href="/" class="d-block"><img src="http://127.0.0.1:8000/static/images/logo/logo.png" width="130" class=""></a>
 </div>
 <div class="col-lg-10 col-md-12 col-sm-12 col-12 p-0 pull-left">
   <button class="navbar-toggler btn btn-dark pull-right margin-topNeg31px collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +34,11 @@
   </button>
   <div class="col navbar-collapse pull-left p-0 collapse" id="navbarText" style="">
     <ul class="navbar-nav colorWhite">
+        <li class="nav-item">
+        <a class="nav-link transition" href="/">Categories</a>
+      </li>
       <li class="nav-item active">
-        <a class="nav-link transition" href="#">Courses</a>
+        <a class="nav-link transition" href="\Microsoft_Office_Suite/courses">Courses</a>
       </li>
       <li class="nav-item">
         <a class="nav-link transition" href="/AboutUs">About Us</a>
@@ -163,12 +166,12 @@
         {% define course.id|addstr:"/video" as url %}
   <a href="{{ url }}">
 
-    <img class="card-img-top" src="http://34.205.32.241/media/{{ course.course_thumbnil_Image }} " alt="Course image">
+    <img class="card-img-top" src="http://127.0.0.1:8000/media/{{ course.course_thumbnil_Image }} " alt="Course image">
     <div class="card-body">
         <h5 class="card-title">{{ course.course_title }}</h5>
       <p class="card-text paddingBotTitalTxt">{{ course.course_detail }}</p>
         <div class="col-12 courseTitle">
-       <img src="http://34.205.32.241/media/{{ course.course_author_image }}" class="pull-left" width="70">
+       <img src="http://127.0.0.1:8000/media/{{ course.course_author_image }}" class="pull-left" width="70">
        <p class="card-text m-3 pull-left"><small class="text-muted">{{ course.course_author_name }}<br>29 Aug 2017</small></p>
       <p class="card-text pull-right mt-5"><small class="text-muted">{{ course.course_duration }}</small></p>
         </div>
@@ -202,7 +205,7 @@
 <div class="container">
 <div class="col border-top1px mt-5">
 <div class="col-lg-3 col-md-6 col-sm-12 col-12 pl-0 pull-left mt-4">
-<a href="/"><img src="http://34.205.32.241/static/images/logo/logo.png" width="135" class=""></a>
+<a href="/"><img src="http://127.0.0.1:8000/static/images/logo/logo.png" width="135" class=""></a>
 <p class="pt-2">Lorem Ipsum is simply dummy text of the
 printing and typesetting industry. Lorem
 Ipsum has been the industry's standard
@@ -259,7 +262,7 @@ dummy text.</p>
 </div>
 
 <div class="col-12 pull-left border-top1px mt-4">
-<p class="text-center mt-3">2017 © Techoryze. All Rights Reserved</p>
+<p class="text-center mt-3">2018 © Techoryze. All Rights Reserved</p>
 </div>
 
 </div>
@@ -308,11 +311,11 @@ dummy text.</p>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-<script src="http://34.205.32.241/static/js/chatscript.js"></script>
-<script src="http://34.205.32.241/static/js/slim.min.js"></script>
-<script src="http://34.205.32.241/static/js/popper.min.js"></script>
-<script src="http://34.205.32.241/static/js/bootstrap.js"></script>
-<script src="http://34.205.32.241/static/js/js.cookie.js"></script>
+<script src="http://127.0.0.1:8000/static/js/chatscript.js"></script>
+<script src="http://127.0.0.1:8000/static/js/slim.min.js"></script>
+<script src="http://127.0.0.1:8000/static/js/popper.min.js"></script>
+<script src="http://127.0.0.1:8000/static/js/bootstrap.js"></script>
+<script src="http://127.0.0.1:8000/static/js/js.cookie.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
     var counter = 0;
@@ -353,7 +356,7 @@ you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48
           if(who == "me"){
               //var $row = $('<li class="list-group-item"></li>');
               $row = $('<div class="chat-message clearfix">\
-                 <img src="http://34.205.32.241/static/images/icon/user_icon.png" alt="" width="32" height="32">\
+                 <img src="http://127.0.0.1:8000/static/images/icon/user_icon.png" alt="" width="32" height="32">\
                   <div class="chat-message-content clearfix">\
                   <h5>{{ user }}</h5>\
                   <p id="text1">'+text+'</p>\
@@ -363,7 +366,7 @@ you.avatar = "https://a11.t26.net/taringa/avatares/9/1/2/F/7/8/Demon_King1/48x48
           }
           else {
                $row = $('<div class="chat-message clearfix">\
-                  <img src="http://34.205.32.241/static/images/icon/usermalecircle.png" alt="" width="32" height="32">\
+                  <img src="http://127.0.0.1:8000/static/images/icon/usermalecircle.png" alt="" width="32" height="32">\
                   <div class="chat-message-content clearfix">\
                   <h5>John Powers</h5>\
                   <p id="text1">'+text+'</p>\

@@ -39,13 +39,16 @@ urlpatterns += i18n_patterns(
     url(r'^ActivationMessage/', views.activateaccount_view, name='ActivationMessage'),
     url(r'^confirm', views.view_confirm, name='confirm'),
     url(r'^AboutUs',views.view_about_us, name='AboutUs'),
+    url(r'^Analytics',views.view_analytics, name='Analytics'),
     url(r'^resetpassconfrmMessage',views.view_forgot_message,name='resetpassconfrmMessage'),
     url(r'^createAcountconfrmMessage', views.view_create_account_confirmatio_message, name='createAcountconfrmMessage'),
     url(r'^resetPasswordSentEmailFormat',views.view_password_reset_format,name='resetPasswordSentEmailFormat'),
     url(r'^ContactUs',views.view_conatact_us, name='ContactUs'),
     url(r'^PrivacyPolicy',views.view_privacy_policy,name='PrivacyPolicy'),
     url(r'^Instructor',views.view_instructor,name='Instructor'),
-    url(r'^Blogs',views.view_blog,name='Blog')
+    url(r'^Blogs',views.view_blog,name='Blog'),
+
+url(r'^safarivideo',views.safariview,name='safarivideo')
 )
 
 # This is only needed when using runserver.
@@ -53,4 +56,5 @@ if settings.DEBUG:
     urlpatterns = [
         url(r'^media/(?P<path>.*)$', serve,
             {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
+
         ] + staticfiles_urlpatterns() + urlpatterns

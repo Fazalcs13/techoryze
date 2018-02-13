@@ -1,7 +1,8 @@
+import datetime
 from django.shortcuts import render_to_response, render
 from django.template.loader import render_to_string
 
-from .models import CreateUser, Courses, CoursesTopic
+from .models import TechoryzeAnalytics, Courses, CoursesTopic
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib import auth, messages
@@ -36,7 +37,6 @@ def coursesTopic_view(request):
 
     template = 'index.html'
     coursesTopic = CoursesTopic.objects.all()
-    context = {'coursesTopic': coursesTopic}
     context = {'coursesTopic': coursesTopic}
     return render(request, template, context)
 
@@ -82,11 +82,17 @@ def courses_view(request, course_name):
 
 def login_view(request):
     template = 'login.html'
+    now = datetime.datetime.now()
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
 
+        analytics = TechoryzeAnalytics.objects.create(AppID='1001', Username=username, AssetID='500',
+                                       PageID='1', Page_Title='Login Page', Asset_Title='Login - Submit', Asset_Type='Button',
+                                       DateTime=now)
+        analytics.save()
         user = authenticate(username=username, password=password)
+        request.session["user_name"] = username
 
         if user is not None:
             user1 = User.objects.get(username=username)
@@ -103,11 +109,25 @@ def login_view(request):
             messages.error(request, "Invalid username and password.")
             return render(request, template)
     else:
+        if "user_name" not in request.session:
+            return render(request, template)
+        email = request.session['user_name']
+        user = User.objects.get(username=email)
+        if user is not None:
+            analytics = TechoryzeAnalytics.objects.create(AppID='1001', Username=request.session["user_name"],
+                                                          AssetID='501',
+                                                          PageID='1', Page_Title='Categories', Asset_Title='Sign Out',
+                                                          Asset_Type='Button',
+                                                          DateTime=now)
+            analytics.save()
+            auth.logout(request)
+
+
         return render(request, template)
 
 def logout_view(request):
     # A backend authenticated the credentials
-    auth.logout(request)
+
     return HttpResponseRedirect("logins")
 
 def video_view(request, course_name, course_id):
@@ -242,6 +262,13 @@ def view_about_us(request):
         return render(request, template)
        # return HttpResponseRedirect("/AboutUs")
 
+
+def view_analytics(request):
+    template = "Analytics.html"
+    techoryze_tracking = TechoryzeAnalytics.objects.raw('SELECT id, Username, Page_Title, Asset_Title, COUNT(AssetID) as Views from mysite_techoryzeanalytics group by Asset_Title')
+    context = {'data':techoryze_tracking}
+    return render(request, template, context)
+
 def view_forgot_message(request):
     template = "resetpassconfrmMessage.html"
     return render(request,template)
@@ -268,4 +295,8 @@ def view_instructor(request):
 
 def view_blog(request):
     template = "Blog.html"
+    return  render(request,template)
+
+def safariview(request):
+    template = "safarivideo.html"
     return  render(request,template)

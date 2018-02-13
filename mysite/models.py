@@ -60,6 +60,7 @@ class Courses(models.Model):
 
     course_video_5 = models.FileField(upload_to=u'video/', default='', blank=True)
 
+
     def __str__(self):
         return self.course_title
 
@@ -94,3 +95,30 @@ class CoursesTopic(models.Model):
 
     def __str__(self):
         return self.course_detail
+
+
+class TechoryzeAnalytics(models.Model):
+    class Meta:
+        verbose_name = 'Techoryze Analytics'
+        verbose_name_plural = 'Techoryze Analytics'
+
+    AppID = models.CharField(max_length=50, default='')
+
+    Username = models.CharField(max_length=50, default='')
+
+    AssetID = models.CharField(max_length=50, default='')
+
+    PageID = models.CharField(max_length=50, default='')
+
+    Page_Title = models.CharField(max_length=30, default='')
+
+    Asset_Title = models.CharField(max_length=30, default='')
+
+    Asset_Type = models.CharField(max_length=30, default='')
+
+    DateTime = models.CharField(max_length=50, default='')
+
+    def __str__(self):
+        return self.Username
+
+
