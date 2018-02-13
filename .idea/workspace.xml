@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0c3efda-44af-4fd3-b3e7-31caa0888a41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.db" afterPath="$PROJECT_DIR$/project.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/admin.py" afterPath="$PROJECT_DIR$/mysite/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/migrations/0003_auto_20171128_1235.py" afterPath="$PROJECT_DIR$/mysite/migrations/0003_auto_20171128_1235.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/migrations/0005_auto_20171128_1355.py" afterPath="$PROJECT_DIR$/mysite/migrations/0005_auto_20171128_1355.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/models.py" afterPath="$PROJECT_DIR$/mysite/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/css/style.css" afterPath="$PROJECT_DIR$/mysite/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/static/js/chat_js.js" afterPath="$PROJECT_DIR$/mysite/static/js/chat_js.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/AboutUs.html" afterPath="$PROJECT_DIR$/mysite/templates/AboutUs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/ActivationMessage.html" afterPath="$PROJECT_DIR$/mysite/templates/ActivationMessage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/Analytics.html" afterPath="$PROJECT_DIR$/mysite/templates/Analytics.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/Blog.html" afterPath="$PROJECT_DIR$/mysite/templates/Blog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/ContactUS.html" afterPath="$PROJECT_DIR$/mysite/templates/ContactUS.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/CoursesSeries.html" afterPath="$PROJECT_DIR$/mysite/templates/CoursesSeries.html" />
@@ -29,9 +26,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/resetPassword.html" afterPath="$PROJECT_DIR$/mysite/templates/resetPassword.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/resetPasswordSentEmailFormat.html" afterPath="$PROJECT_DIR$/mysite/templates/resetPasswordSentEmailFormat.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/resetpassconfrmMessage.html" afterPath="$PROJECT_DIR$/mysite/templates/resetpassconfrmMessage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/safarivideo.html" afterPath="$PROJECT_DIR$/mysite/templates/safarivideo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/templates/video.html" afterPath="$PROJECT_DIR$/mysite/templates/video.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/views.py" afterPath="$PROJECT_DIR$/mysite/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
-              <caret line="267" column="90" lean-forward="false" selection-start-line="267" selection-start-column="90" selection-end-line="267" selection-end-column="90" />
+              <caret line="267" column="17" lean-forward="false" selection-start-line="267" selection-start-column="17" selection-end-line="267" selection-end-column="17" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#1586#3761#0" expanded="false" />
@@ -73,11 +69,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="PrivacyPolicy.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/templates/PrivacyPolicy.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0003_auto_20171128_1235.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/migrations/0003_auto_20171128_1235.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+              <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -99,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/templates/AboutUs.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+              <caret line="2" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,16 +126,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-320">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="90" column="27" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -174,20 +180,20 @@
       <find>videoSource</find>
       <find>sign out</find>
       <find>{% define course.course_video as video %}</find>
-      <find>127.0.0</find>
       <find>embed</find>
       <find>video</find>
       <find>https://techoryze.herokuapp.com</find>
       <find>http://54.197.43.10</find>
-      <find>http://127.0.0.1:8000</find>
       <find>bootstrap.min.css</find>
       <find>54.</find>
       <find>54.197.43.10</find>
       <find>login</find>
       <find>for cours</find>
       <find>TechoryzeAnalytics</find>
-      <find>analytics</find>
       <find>Our Goal</find>
+      <find>127.0.0</find>
+      <find>analytics</find>
+      <find>http://127.0.0.1:8000</find>
     </findStrings>
     <replaceStrings>
       <replace>com/media</replace>
@@ -200,10 +206,10 @@
       <replace>http://127.0.0.1:8000/</replace>
       <replace>http://54.197.43.10/</replace>
       <replace>http://127.0.0.1</replace>
-      <replace>http://54.197.43.10</replace>
       <replace>http://127.0.0.1:8000</replace>
       <replace>127.0.0.1:8000</replace>
       <replace>TechoryzeAnalytic</replace>
+      <replace>http://54.197.43.10</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Python27\tutorial-project\tutorial-project\mysite\migrations</dir>
@@ -245,7 +251,6 @@
         <option value="$PROJECT_DIR$/mysite/templates/AboutUs.html" />
         <option value="$PROJECT_DIR$/mysite/templates/video.html" />
         <option value="$PROJECT_DIR$/mysite/templates/CoursesSeries.html" />
-        <option value="$PROJECT_DIR$/mysite/migrations/0003_auto_20171128_1235.py" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/templates/login.html" />
         <option value="$PROJECT_DIR$/mysite/migrations/0048_auto_20180213_1250.py" />
@@ -255,6 +260,7 @@
         <option value="$PROJECT_DIR$/mysite/admin.py" />
         <option value="$PROJECT_DIR$/mysite/templates/Analytics.html" />
         <option value="$PROJECT_DIR$/mysite/views.py" />
+        <option value="$PROJECT_DIR$/mysite/migrations/0003_auto_20171128_1235.py" />
       </list>
     </option>
   </component>
@@ -434,7 +440,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34013605" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27155825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282313" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -650,13 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/PrivacyPolicy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="153" column="34" lean-forward="false" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Techoryze/Techoryze/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
@@ -706,13 +705,6 @@
         <state relative-caret-position="153">
           <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/migrations/0003_auto_20171128_1235.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -791,7 +783,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/templates/AboutUs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+          <caret line="2" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -831,7 +823,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -841,7 +833,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="267" column="90" lean-forward="false" selection-start-line="267" selection-start-column="90" selection-end-line="267" selection-end-column="90" />
+          <caret line="267" column="17" lean-forward="false" selection-start-line="267" selection-start-column="17" selection-end-line="267" selection-end-column="17" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#1586#3761#0" expanded="false" />
@@ -851,6 +843,22 @@
             <element signature="e#9302#9730#0" expanded="false" />
             <marker date="1518515809818" expanded="true" signature="10859:10980" ph="SELECT id, U... mysite_techoryzeanalytics" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/PrivacyPolicy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/migrations/0003_auto_20171128_1235.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
